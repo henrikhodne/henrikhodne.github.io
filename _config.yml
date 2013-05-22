@@ -1,0 +1,6 @@
+name: Henrik Hodne
+pygments: true
+safe: true
+timezone: America/Chicago
+exclude:
+  - sass

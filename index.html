@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="blog-index">
+  {% for post in site.posts %}
+  <article class="post">
+    <header>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="meta">
+        <time datetime="{{ post.date }}" pubdate>
+          {{ post.date | date_to_string }}
+        </time>
+      </p>
+    </header>
+
+    {{ post.excerpt | markdownify }}
+
+    <footer>
+      <a rel="full-article" href="{{ post.url }}">Continue reading →</a>
+    </footer>
+  </article>
+  {% endfor %}
+</div>
+

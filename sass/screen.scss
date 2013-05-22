@@ -1,0 +1,61 @@
+@import "compass/reset";
+@import "compass/typography";
+
+body {
+  max-width: 676px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111111;
+
+  a {
+    color: #111111;
+    text-decoration: none;
+  }
+}
+
+header.banner {
+  border-bottom: 1px solid #000000;
+  height: 3em;
+  text-align: center;
+  margin: 1em 0;
+
+  h1 {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    font-weight: normal;
+  }
+}
+
+article.post {
+  header {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin: 1.1em 0;
+  }
+
+  footer {
+    margin-top: 1em;
+  }
+
+  margin-bottom: 1.2em;
+}
+
+p.meta {
+  margin: 0;
+  color: #666666;
+}
